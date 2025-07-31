@@ -1,0 +1,17 @@
+import './Formulario.css'
+import CampoTexto from '../CampoTexto'
+
+const Formulario = ()=>{
+    return(
+        <section>
+            <form>
+                <CampoTexto label='Nome'placeholder='Digite seu nome'/>
+                <CampoTexto label='Cargo'placeholder='Digite seu cargo'/>
+                <CampoTexto label='Imagem'placeholder='Digite o endereço da imagem'/>
+                <CampoTexto label='time'placeholder=''/>
+            </form>
+        </section>
+    )
+}
+
+export default Formulario
