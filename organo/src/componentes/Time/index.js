@@ -8,7 +8,12 @@ return(
     <section className='time' style={css}>
         <h3 style={{borderColor: props.corPrimaria}}>
             {props.nome}</h3>
-            {props.colaboradores.map(colaborador =><Colaborador nome={Colaborador.nome} cargo={Colaborador.cargo} imagem={Colaborador.imagem}/>)}
+            {props.colaboradores.map(colaborador =><Colaborador 
+            corDeFundo={props.corPrimaria}
+            key={colaborador.nome} 
+            nome={colaborador.nome}
+            cargo={colaborador.cargo} 
+            imagem={colaborador.imagem}/>)}
     </section>
 )
 }
